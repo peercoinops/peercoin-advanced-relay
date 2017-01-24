@@ -2294,7 +2294,8 @@ bool LoadBlockIndex(bool fAllowNew)
         hashGenesisBlock = hashGenesisBlockTestNet;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 28);
         nStakeMinAge = 60 * 60 * 24; // test net min age is 1 day
-        nCoinbaseMaturity = 60;
+        nCoinbaseMaturity = GetArg("-coinbasematurity", 60); //Default test net coinbase maturity is 60
+        //nCoinbaseMaturity = 60;
         bnInitialHashTarget = CBigNum(~uint256(0) >> 29);
         nModifierInterval = 60 * 20; // test net modifier interval is 20 minutes
     }

@@ -225,6 +225,7 @@ bool AppInit2(int argc, char* argv[])
             "  -daemon          \t\t  " + _("Run in the background as a daemon and accept commands") + "\n" +
 #endif
             "  -testnet         \t\t  " + _("Use the test network") + "\n" +
+            "  -coinbasematurity=<n> \t " + _("Testnet coinbase maturity (default: 60)") + "\n" +
             "  -debug           \t\t  " + _("Output extra debugging information") + "\n" +
             "  -logtimestamps   \t  "   + _("Prepend debug output with timestamp") + "\n" +
             "  -printtoconsole  \t  "   + _("Send trace/debug info to console instead of debug.log file") + "\n" +
